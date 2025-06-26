@@ -1,0 +1,166 @@
+.login-container {
+  @apply bg-[#f1f1f1] w-full min-h-screen;
+}
+
+.login-background-wrapper {
+  @apply w-full relative;
+}
+
+.login-background {
+  @apply w-full h-[290px] bg-[url(/images/login-background.svg)] bg-cover;
+}
+
+.login-logo-wrapper {
+  @apply flex items-center justify-center gap-2.5 pt-[132px] absolute left-[37%];
+}
+
+.login-logo {
+  @apply w-12 h-12;
+}
+
+.login-title {
+  @apply font-bold text-white text-xl;
+}
+
+.login-card-wrapper {
+  @apply absolute left-1/2 top-[202px] -translate-x-1/2;
+}
+
+.login-card {
+  @apply w-[405px] border-0 rounded-lg overflow-hidden;
+}
+
+.login-card-header {
+  @apply bg-[#e6e6e6] py-[30px] px-[45px] rounded-t-lg;
+}
+
+.login-card-title {
+  @apply font-bold text-lg text-[#2d3748];
+}
+
+.login-card-divider {
+  @apply h-[5px] bg-[#FFE512];
+}
+
+.login-card-content {
+  @apply p-[30px] bg-white rounded-b-lg;
+}
+
+.login-form {
+  @apply flex flex-col gap-[22px];
+}
+
+.field-wrapper {
+  @apply flex flex-col gap-2;
+}
+
+.field-label-wrapper {
+  @apply flex items-center gap-1.5;
+}
+
+.field-icon {
+  @apply w-6 h-6 text-[#652d91];
+}
+
+.field-label {
+  @apply font-semibold text-[#652d91] text-lg;
+}
+
+.field-input {
+  @apply border-gray-300;
+}
+
+.login-button {
+  @apply w-full bg-[#662d91] hover:bg-[#562d81] text-white font-semibold flex items-center justify-center gap-2;
+}
+
+.login-button:disabled {
+  @apply opacity-70 cursor-not-allowed;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.remember-me-wrapper {
+  @apply flex items-center gap-2;
+}
+
+.remember-me-checkbox {
+  @apply border-[#2d3748];
+}
+
+.remember-me-label {
+  @apply text-[#2d3748] text-lg;
+}
+
+.signup-wrapper {
+  @apply text-lg;
+}
+
+.signup-text {
+  @apply text-[#2d3748];
+}
+
+.signup-link {
+  @apply p-0 text-[#662d91] font-semibold text-lg;
+}
+
+.field-error {
+  @apply text-red-500 text-sm;
+}
+
+.auth-error {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.error-card {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.error-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: rgba(220, 38, 38, 0.1);
+  border: 1px solid rgba(220, 38, 38, 0.5);
+  border-radius: 4px;
+}
+
+.error-message {
+  color: rgb(185, 28, 28);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.error-close-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  padding: 4px;
+  color: rgb(185, 28, 28);
+  cursor: pointer;
+  margin-left: 8px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.error-close-button:hover {
+  background-color: rgba(220, 38, 38, 0.2);
+}
